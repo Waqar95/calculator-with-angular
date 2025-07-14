@@ -1,11 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator-buttons',
-  imports: [],
   templateUrl: './calculator-buttons.html',
-  styleUrl: './calculator-buttons.css'
+  styleUrls: ['./calculator-buttons.css'],
 })
-export class CalculatorButtons {
+export class CalculatorButtonsComponent {
+  buttons: string[] = [
+    '7',
+    '8',
+    '9',
+    '/',
+    '4',
+    '5',
+    '6',
+    '*',
+    '1',
+    '2',
+    '3',
+    '-',
+    '0',
+    '.',
+    '=',
+    '+',
+  ];
 
+  @Output() buttonPressed = new EventEmitter<string>();
+
+  onButtonClick(button: string) {
+    this.buttonPressed.emit(button);
+  }
 }

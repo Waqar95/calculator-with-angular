@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-calculator-display',
-  imports: [],
   templateUrl: './calculator-display.html',
-  styleUrl: './calculator-display.css'
+  styleUrls: ['./calculator-display.css'],
 })
-export class CalculatorDisplay {
-
+export class CalculatorDisplayComponent {
+  @Input() displayValue: string = '0'; // Default value for the display
 }
