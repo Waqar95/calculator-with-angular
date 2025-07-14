@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator-buttons',
-  templateUrl: './calculator-buttons.html',
+  templateUrl: './calculator-buttons.html', // Corrected path
   styleUrls: ['./calculator-buttons.css'],
 })
 export class CalculatorButtonsComponent {

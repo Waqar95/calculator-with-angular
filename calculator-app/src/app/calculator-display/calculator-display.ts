@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './calculator-display.html',
   styleUrls: ['./calculator-display.css'],
 })
-export class CalculatorDisplayComponent {
+export class CalculatorDisplay {
   @Input() displayValue: string = '0'; // Default value for the display
 }
