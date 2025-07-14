@@ -1,1 +1,5 @@
-<p>calculator-buttons works!</p>
+<div class="calculator-buttons">
+  <button *ngFor="let button of buttons" (click)="onButtonClick(button)">
+    {{ button }}
+  </button>
+</div>
